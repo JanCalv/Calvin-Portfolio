@@ -1,0 +1,23 @@
+.footer {
+    background-color: #003369;
+    padding: 36px 0;
+    position: relative;
+    text-align: center;
+    overflow-y: auto;
+
+    .footer-link {
+        color: #11999E;
+        margin: 10px 20px;
+        text-decoration: none;
+        font-size: 2rem;
+        left: 50%;
+    }
+
+    .copyright {
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 15px 0;
+        top: 36px;
+        position: relative;
+    }
+}

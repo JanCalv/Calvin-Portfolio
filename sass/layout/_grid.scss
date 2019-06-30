@@ -1,0 +1,112 @@
+.grids{
+
+
+    @include respond (big-desktop) {
+        position: relative;
+        top: -38px;
+        left: -17px;
+    }
+
+    @include respond(tab-land) {
+        top: -113px;
+        left: -7px;
+        position: relative;
+      }
+
+    @include respond (tab-port){
+        position: relative;
+        top: 120px;
+        left: 3px;  
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    position: absolute;
+    top: 59%;
+    left: 49.3%;
+    transform: translate(-50%,-50%);
+    backface-visibility: hidden;
+
+    @include respond (tab-port){
+        grid-template-columns: auto; 
+    }
+
+
+    .grid-item {
+        background-color: #ffffffcc;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 6px;
+        font-size: 1.4rem;
+        text-align: center;
+        transition: all .5s;
+        backface-visibility: hidden;
+        // background-image: linear-gradient(120deg, transparent 0%,transparent 50%, white 50%);
+        // background-size: 250%;
+        // transition: all .4s;
+        // text-decoration: none;
+        // backface-visibility: hidden;
+
+        // &:hover {
+        //     // background-position: 100%;
+        //     // transform: translateY(-5px);
+        //     // backface-visibility: hidden;
+        // }
+      }    
+
+
+
+    .first-work {
+        position: relative;
+          
+
+        .futors {
+            height: 140px;
+
+            @include respond (big-desktop) {
+                height: 200px
+            }
+  
+        }
+    }
+
+    .second-work {
+        position: relative;
+        
+
+        .preload {
+          height: 140px;
+
+            @include respond (big-desktop) {
+                height: 200px
+            }
+
+        }
+    }
+
+    .third-work {
+        position: relative;
+            
+
+        .capstone {
+            height: 140px;
+
+            @include respond (big-desktop) {
+                height: 200px
+            }
+        }
+    }
+    
+    .work-link,
+        &:visited,
+        &:link {
+
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000000;
+        font-size: 2rem;
+    }
+}
+}

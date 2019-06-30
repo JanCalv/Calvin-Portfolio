@@ -1,0 +1,102 @@
+.about-me {
+    background-color: #E4F9F5;
+    padding-top: 277px;
+    position: relative;
+    text-align: center;
+    overflow-y: hidden;
+
+
+    // @include respond(smartphone) {
+    //     width: 320px;
+    // }
+    
+    .back-icon {
+        position: absolute;
+        top: 80%;
+        left: 4%;
+        color: #66BFBF;
+        cursor: pointer;
+        z-index: 10;
+        position: fixed;
+    }    
+        
+
+    //     &:hover{
+    //         color: rgb(0, 161, 161);
+    //         transition: .2s;
+    //         transform: translateY(-5px);
+    //     }
+
+    //     &:active {
+    //         transform: translateY(-2px);
+    //     }
+    // }
+
+ 
+
+    .mountain {
+      position: relative;
+      top: 5px;
+
+      @include respond (big-desktop) {
+        left: -47px;
+      }
+
+      @include respond (phone) {
+        height: 182px;
+      }
+
+    }
+
+
+    .cloud {
+        position: absolute;
+        top: 7%;
+        right: 17%;  
+    }
+
+    .bottom-cloud {
+        position: absolute;
+        top: 40%;
+        left: 17%;      
+    }
+
+    .header-secondary{
+        position: absolute;
+        top: 7%;
+        backface-visibility: hidden;
+        width: 100%;
+        text-align: center;
+        z-index: 15;
+
+        @include respond (tab-land) {
+            position: relative;
+            top: -237px;
+        }
+
+        &-main {
+            font-size: 4rem;
+            font-family: 'Pacifico', cursive;
+            color: #66BFBF;
+            margin-bottom: 10px;
+            backface-visibility: hidden; 
+            
+            
+            
+        }
+
+        &-desc {  
+            font-size: 1.8rem;
+            width: 70%;
+            margin: 0 auto;
+            backface-visibility: hidden;  
+            
+            @include respond (phone){
+              font-size: 1.5rem;
+              width: 95%;
+            }
+        }   
+
+    }
+
+}

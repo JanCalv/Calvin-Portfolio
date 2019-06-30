@@ -1,0 +1,47 @@
+.myworks {
+    position: relative;
+    background-color: #176ECB;
+    padding: 318px 0 ;
+    text-align: center;
+    overflow-y: auto;
+
+    .grid-heading{ 
+        display: inline-block;
+
+    }
+
+        &-header {
+            position: absolute;
+            top: 32px;
+            left: 500px;
+            font-size: 3rem;
+            color: #c8ffff;
+
+            @include respond (big-desktop) {
+              position: relative;
+              top: -300px;
+              left: 0px;
+            }
+
+            @include respond(tab-land) {
+              top: -300px;
+              left: 0;
+              position: relative;
+            }
+
+            @include respond(tab-port) {
+              top: -303px;
+              position: relative;
+              left: 0px;
+          }
+        }
+
+        &-desc {
+            font-size: 1.8rem;
+
+            @include respond (big-desktop) {
+              font-size: 2rem;
+            }
+        }
+
+    }

@@ -1,0 +1,212 @@
+.header-button {
+    animation: moveinTop 2s ease-out 2s;
+    animation-fill-mode: backwards;
+    
+    &-link, 
+        &:link, 
+        &:visited {
+            border: .5px solid white;
+            font-size: 2rem;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem 0;
+            background-image: linear-gradient(120deg, transparent 0%,transparent 50%, white 50%);
+            background-size: 225%;
+            transition: all .4s;
+            color: #fff;
+            text-decoration: none;
+            backface-visibility: hidden;
+
+
+            &:hover,
+            &:active  {
+                color: #5f149a;
+                font-size: 2rem;
+                background-position: 100%;
+                transform: translateX(5px);
+                backface-visibility: hidden;
+        }
+    }
+
+    
+}
+
+.resume-button {
+    // animation: moveinTop 2s ease-out 2s;
+    // animation-fill-mode: backwards;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    z-index: 15;
+
+    @include respond (tab-land) {
+        top: 275px;
+        left: 158px;
+    }
+
+    @include respond(tab-port) {
+        top: 300px;
+        left: 63px;
+    }
+
+    @include respond(phone) {
+        top: 282px;
+        left: 33px;
+    }
+    
+    &-link, 
+        &:link, 
+        &:visited {
+            position: absolute;
+            border: 1px solid #66BFBF;
+            font-size: 2rem;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem 0;
+            background-image: linear-gradient(180deg, transparent 0%,transparent 100%, #66BFBF 100%);
+            background-size: 250%;
+            transition: all .5s;
+            color: #66BFBF;
+            text-decoration: none;
+            backface-visibility: hidden;
+
+            @include respond(tab-port) {
+                width: 200px;
+            }
+
+            @include respond(phone) {
+                width: 100px;
+            }
+
+            &:hover,
+            &:active  {
+                background-image: linear-gradient(180deg, transparent 0%,transparent 0%, #66BFBF 0%);
+                color: #fff;
+                font-size: 2rem;
+                background-position: 100%;
+                transform: translateY(-5px);
+                backface-visibility: hidden;
+        }
+    }
+
+}
+
+.projects-button {
+    // animation: moveinTop 2s ease-out 2s;
+    // animation-fill-mode: backwards;
+    position: absolute;
+    top: 40%;
+    right: 48%;
+    z-index: 15;
+
+    @include respond (tab-land) {
+        top: 275px;
+        right: 403px;
+    }
+
+    @include respond(tab-port) {
+        top: 300px;
+        right: 270px;
+    }
+
+    @include respond(phone) {
+        top: 282px;
+        right: 131px;
+    }
+  
+    
+    &-link, 
+        &:link, 
+        &:visited {
+            position: absolute;
+            border: 1px solid #66BFBF;
+            font-size: 2rem;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem 0;
+            background-image: linear-gradient(180deg, transparent 0%,transparent 100%, #66BFBF 100%);
+            background-size: 250%;
+            transition: all .5s;
+            color: #66BFBF;
+            text-decoration: none;
+            backface-visibility: hidden; 
+
+            @include respond(tab-port) {
+                width: 200px;
+            }
+
+            @include respond(phone) {
+                width: 100px;
+            }
+
+        }
+   
+}
+
+.contact-button {
+    // animation: moveinTop 2s ease-out 2s;
+    z-index: 10;
+    text-align: center;
+    top: -10%;
+    left: 575px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    @include respond (big-desktop) {
+        top: -51px;
+        left: -99px;
+        position: relative;
+        transform: translate(0, 0);
+    }
+
+    @include respond (tab-land) {
+        top: -40px;
+        left: -101px;
+        position: relative;
+        transform: translate(0, 0);
+    }
+
+    @include respond(tab-port) {
+        top: -31px;
+        left: -99px;
+        position: relative;
+        transform: translate(0, 0);
+    }
+
+
+    &-link, 
+        &:link, 
+        &:visited {
+            position: absolute;
+            border: 1px solid $color-white;
+            font-size: 2rem;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem 0;
+            background-image: linear-gradient(180deg, transparent 0%,transparent 100%, $color-white 100%);
+            background-size: 250%;
+            transition: all .5s;
+            color: $color-white;
+            text-decoration: none;
+            backface-visibility: hidden;
+
+            &:hover,
+            &:active  {
+                background-image: linear-gradient(180deg, transparent 0%,transparent 0%, $color-white 0%);
+                color: #003369;
+                font-size: 2rem;
+                background-position: 100%;
+                transform: translateY(-5px);
+                backface-visibility: hidden;
+        }
+    }
+
+}
